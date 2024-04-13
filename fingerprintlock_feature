@@ -1,0 +1,19 @@
+Feature: FingerPrint Lock
+
+As a user 
+I need a FingerPrint lock in app
+So that file can be secured 
+
+Background:
+    Given the following apps   
+        | App name | Serial | Status | 
+        | Instagram | 001 | True |
+        | Whatsapp | 002 | Flase |
+        | Facebook | 003 | True |
+
+Scenario: Open the app
+    Given I am opening the app "Instagram"
+    When i open the "Serial" to "001"
+    and i click the "Status" button 
+    Then I should see the message "True" 
+    

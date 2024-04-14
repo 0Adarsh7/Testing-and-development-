@@ -1,3 +1,6 @@
+"""Writing a gherkin syntax"""
+
+
 Feature: FingerPrint Lock
 
 As a user 
